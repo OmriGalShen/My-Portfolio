@@ -1,0 +1,33 @@
+.landing {
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  padding: 100px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.banner {
+  background-color: black;
+  opacity: 0.9;
+  width: 75%;
+  margin: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin: auto;
+}
