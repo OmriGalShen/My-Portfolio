@@ -1,6 +1,5 @@
 import React from "react";
 import "./Landing.css";
-import { Grid, Cell } from "react-mdl";
 import avatar from "../../assets/images/myAvatar.png";
 import { SocialIcon } from "react-social-icons";
 
