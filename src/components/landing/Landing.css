@@ -1,7 +1,14 @@
 .landing {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 5%;
+}
+
+.title {
+  color: red;
 }
 
 .avatar {
@@ -13,8 +20,6 @@
 .banner {
   background-color: black;
   opacity: 0.9;
-  width: 75%;
-  margin: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,13 +28,14 @@
 }
 
 .social-links {
+  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 50%;
-  height: 50%;
-  margin: auto;
 }
 
-.social-link {
-  margin: 5%;
+.social-links i {
+  color: white;
+  font-size: 2em;
+  padding: 8px;
 }
