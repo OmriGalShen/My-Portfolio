@@ -73,7 +73,7 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <IconButton
-            edge="start"
+            edge="end"
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
@@ -84,12 +84,21 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title}>
             My Portfolio
           </Typography>
-          <Link to="/" className="no-underline white">
-            <Button color="inherit">Home</Button>
-          </Link>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" component={Link} to={"/"}>
+            Home
+          </Button>
+          <Button color="inherit" component={Link} to={"/about"}>
+            About
+          </Button>
+          <Button color="inherit" component={Link} to={"/projects"}>
+            Project
+          </Button>
+          <Button color="inherit" component={Link} to={"/resume"}>
+            Resume
+          </Button>
+          <Button color="inherit" component={Link} to={"/Contact"}>
+            Contact
+          </Button>
         </Toolbar>
       </AppBar>
       <Drawer
