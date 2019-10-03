@@ -24,9 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuItem: {
     fontSize: "1.5em",
-    height: "20%",
-    padding: "20px",
-    width: "150%"
+    padding: "20px"
   }
 }));
 
@@ -48,25 +46,13 @@ const Navbar = () => {
     setOpenDrawer(open);
   };
 
-  const linksList = (
-    <div>
-      <MenuItem component={Link} to={"/"} className={classes.menuItem}>
-        Home
-      </MenuItem>
-      <MenuItem component={Link} to={"/about"} className={classes.menuItem}>
-        About Me
-      </MenuItem>
-      <MenuItem component={Link} to={"/projects"} className={classes.menuItem}>
-        Projects
-      </MenuItem>
-      <MenuItem component={Link} to={"/resume"} className={classes.menuItem}>
-        Resume
-      </MenuItem>
-      <MenuItem component={Link} to={"/contact"} className={classes.menuItem}>
-        Contact
-      </MenuItem>
-    </div>
-  );
+  const linksList = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Projects", link: "/projects" },
+    { name: "Resume", link: "/resume" },
+    { name: "Contact", link: "/contact" }
+  ];
 
   return (
     <div>
@@ -84,21 +70,18 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title}>
             My Portfolio
           </Typography>
-          <Button color="inherit" component={Link} to={"/"}>
-            Home
-          </Button>
-          <Button color="inherit" component={Link} to={"/about"}>
-            About
-          </Button>
-          <Button color="inherit" component={Link} to={"/projects"}>
-            Project
-          </Button>
-          <Button color="inherit" component={Link} to={"/resume"}>
-            Resume
-          </Button>
-          <Button color="inherit" component={Link} to={"/Contact"}>
-            Contact
-          </Button>
+          {linksList.map((linkItem, index) => {
+            return (
+              <Button
+                key={index}
+                color="inherit"
+                component={Link}
+                to={linkItem.link}
+              >
+                {linkItem.name}
+              </Button>
+            );
+          })}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -106,7 +89,19 @@ const Navbar = () => {
         onClose={toggleDrawer(false)}
         className={classes.drawer}
       >
-        {linksList}
+        {linksList.map((linkItem, index) => {
+          return (
+            <MenuItem
+              key={index}
+              color="inherit"
+              component={Link}
+              to={linkItem.link}
+              className={classes.menuItem}
+            >
+              {linkItem.name}
+            </MenuItem>
+          );
+        })}
       </Drawer>
     </div>
   );
