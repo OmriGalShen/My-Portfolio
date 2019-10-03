@@ -1,19 +1,11 @@
 .landing {
   width: 100%;
-  margin: auto;
-  padding-top: 100px;
-  padding: 100px;
-}
-
-.profile {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .avatar {
-  vertical-align: middle;
-  width: 300px;
+  width: 50%;
   height: auto;
   border-radius: 50%;
 }
@@ -22,12 +14,22 @@
   background-color: black;
   opacity: 0.9;
   width: 75%;
-  margin: auto;
+  margin: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
 }
 
 .social-links {
   display: flex;
-  justify-content: space-around;
-  width: 30%;
+  justify-content: space-between;
+  width: 50%;
+  height: 50%;
   margin: auto;
+}
+
+.social-link {
+  margin: 5%;
 }

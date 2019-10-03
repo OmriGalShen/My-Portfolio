@@ -25,6 +25,15 @@ const useStyles = makeStyles(theme => ({
   menuItem: {
     fontSize: "1.5em",
     padding: "20px"
+  },
+  appbar: {
+    flexGrow: 1,
+    justifyContent: "space-between",
+    marginLeft: "auto"
+  },
+  mainlinks: {
+    // display: "flex",
+    // alignItems: "center"
   }
 }));
 
@@ -56,7 +65,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <IconButton
             edge="end"
@@ -70,18 +79,20 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title}>
             My Portfolio
           </Typography>
-          {linksList.map((linkItem, index) => {
-            return (
-              <Button
-                key={index}
-                color="inherit"
-                component={Link}
-                to={linkItem.link}
-              >
-                {linkItem.name}
-              </Button>
-            );
-          })}
+          <div className={classes.mainlinks}>
+            {linksList.map((linkItem, index) => {
+              return (
+                <Button
+                  key={index}
+                  color="inherit"
+                  component={Link}
+                  to={linkItem.link}
+                >
+                  {linkItem.name}
+                </Button>
+              );
+            })}
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -97,6 +108,7 @@ const Navbar = () => {
               component={Link}
               to={linkItem.link}
               className={classes.menuItem}
+              onClick={toggleDrawer(false)}
             >
               {linkItem.name}
             </MenuItem>
