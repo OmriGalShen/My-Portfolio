@@ -1,0 +1,11 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  background-image: url("../../assets/images/contact_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
