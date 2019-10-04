@@ -28,11 +28,11 @@ const useStyles = makeStyles(theme => ({
   appbar: {
     flexGrow: 1,
     justifyContent: "space-between",
-    marginLeft: "auto"
+    marginLeft: "auto",
+    background: "#23374d"
   },
   mainlinks: {
-    // display: "flex",
-    // alignItems: "center"
+    fontSize: "1.5em"
   }
 }));
 
@@ -63,10 +63,11 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
+    <div className="navbar">
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <IconButton
+            id="drawer-button"
             edge="end"
             className={classes.menuButton}
             color="inherit"
@@ -78,7 +79,7 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title}>
             My Portfolio
           </Typography>
-          <div className={classes.mainlinks}>
+          <div className={classes.mainlinks} id="button-list">
             {linksList.map((linkItem, index) => {
               return (
                 <Button

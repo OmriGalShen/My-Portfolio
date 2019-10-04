@@ -10,8 +10,10 @@ const useStyles = makeStyles(theme => ({
   paper: {
     padding: theme.spacing(1),
     textAlign: "center",
-    background: "#3f51b5",
-    color: "white"
+    // background: "#3f51b5",
+    color: "white",
+    opacity: 0.8,
+    background: "black"
   }
 }));
 

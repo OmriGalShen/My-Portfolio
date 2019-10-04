@@ -16,20 +16,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   background: #5433ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     to right,
     #a5fecb,
     #20bdff,
     #5433ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  ); Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(
     to right,
     #a5fecb,
     #20bdff,
     #5433ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: url("/src//assets/images/tech_bg.jpg"); */
+  background-image: url("assets/images/tech_bg_4.jpg");
+  background-size: cover;
 }
 
 code {

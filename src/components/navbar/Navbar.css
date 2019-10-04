@@ -1,0 +1,14 @@
+#button-list {
+  display: block;
+}
+#drawer-button {
+  display: none;
+}
+@media (max-width: 600px) {
+  #button-list {
+    display: none;
+  }
+  #drawer-button {
+    display: block;
+  }
+}
