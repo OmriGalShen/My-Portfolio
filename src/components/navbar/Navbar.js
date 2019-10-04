@@ -10,6 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Drawer from "@material-ui/core/Drawer";
 import MenuItem from "@material-ui/core/MenuItem";
+// import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,21 +20,22 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2)
   },
   title: {
-    flexGrow: 1
+    flexGrow: 1,
+    padding: 20
   },
   menuItem: {
     fontSize: "1.5em",
     padding: "20px"
   },
   appbar: {
-    flexGrow: 1,
-    justifyContent: "space-between",
-    marginLeft: "auto",
-    background: "#23374d"
+    background: "#23374d",
+    alignItems: "flex-start",
+    justifyContent: "space-between"
   },
   mainlinks: {
-    fontSize: "1.5em"
-  }
+    fontSize: "3em"
+  },
+  paper: { background: "#23374d", color: "white" }
 }));
 
 const Navbar = () => {
@@ -76,7 +78,7 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.title} id="title">
             My Portfolio
           </Typography>
           <div className={classes.mainlinks} id="button-list">
@@ -98,7 +100,7 @@ const Navbar = () => {
       <Drawer
         open={openDrawer}
         onClose={toggleDrawer(false)}
-        className={classes.drawer}
+        classes={{ paper: classes.paper }}
       >
         {linksList.map((linkItem, index) => {
           return (

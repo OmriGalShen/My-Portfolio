@@ -17,6 +17,10 @@
   border-radius: 50%;
 }
 
+hr {
+  width: 50%;
+}
+
 .banner {
   background-color: black;
   /* opacity: 0.9; */
@@ -36,6 +40,6 @@
 
 .social-links i {
   color: white;
-  font-size: 2em;
-  padding: 8px;
+  font-size: 2.5em;
+  padding: 12px;
 }

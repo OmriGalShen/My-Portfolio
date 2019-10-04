@@ -4,11 +4,17 @@
 #drawer-button {
   display: none;
 }
+#title {
+  display: block;
+}
 @media (max-width: 600px) {
   #button-list {
     display: none;
   }
   #drawer-button {
+    display: block;
+  }
+  #title {
     display: block;
   }
 }

@@ -31,12 +31,13 @@ const Landing = props => {
     <div className="landing">
       <div className="banner">
         <img alt="avatar" src={avatar} className="avatar" />
-        <h1 className="f1 b white title">Full Stuck Web Developer</h1>
+        <h1 className="f1 white title">Full Stuck Web Developer</h1>
+        <hr />
         <p className="white f3">Java | Python | Javascript | React | NodeJS</p>
         <div className="social-links">
           {myLinks.map((link, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="grow">
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
                   <i className={link.icon} aria-hidden="true"></i>
                 </a>
