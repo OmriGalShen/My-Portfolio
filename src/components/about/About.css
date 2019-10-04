@@ -7,4 +7,5 @@
   padding: 15%;
   background-image: url("../../assets/images/about_bg.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
