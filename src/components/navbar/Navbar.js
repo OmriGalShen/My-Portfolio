@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-// import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";

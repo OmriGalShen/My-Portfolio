@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./components/app/App";
 import * as serviceWorker from "./serviceWorker";
 import "tachyons";
-import "react-mdl/extra/material.css";
-import "react-mdl/extra/material.js";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
