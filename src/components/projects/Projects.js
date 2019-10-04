@@ -72,7 +72,7 @@ const Projects = props => {
           <div className="cards">
             {projectList.map((cardInfo, index) => {
               return (
-                <div className="card">
+                <div className="card" key={index}>
                   <MediaCard cardInfo={cardInfo} />
                 </div>
               );
@@ -83,7 +83,7 @@ const Projects = props => {
           <div className="cards">
             {projectList.map((cardInfo, index) => {
               return (
-                <div className="card">
+                <div className="card" key={index}>
                   <MediaCard cardInfo={cardInfo} />
                 </div>
               );
@@ -94,7 +94,7 @@ const Projects = props => {
           <div className="cards">
             {projectList.map((cardInfo, index) => {
               return (
-                <div className="card">
+                <div className="card" key={index}>
                   <MediaCard cardInfo={cardInfo} />
                 </div>
               );
@@ -105,7 +105,7 @@ const Projects = props => {
           <div className="cards">
             {projectList.map((cardInfo, index) => {
               return (
-                <div className="card">
+                <div className="card" key={index}>
                   <MediaCard cardInfo={cardInfo} />
                 </div>
               );
