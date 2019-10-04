@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import avatar from "../../assets/images/myAvatar.png";
+import avatar from "../../assets/images/myAvatar2.png";
 // import { SocialIcon } from "react-social-icons";
 
 const myLinks = [

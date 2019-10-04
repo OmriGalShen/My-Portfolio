@@ -10,7 +10,6 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Drawer from "@material-ui/core/Drawer";
 import MenuItem from "@material-ui/core/MenuItem";
-// import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,7 +20,9 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
-    padding: 20
+    padding: 20,
+    textDecoration: "none",
+    color: "white"
   },
   menuItem: {
     fontSize: "1.5em",
@@ -78,7 +79,13 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title} id="title">
+          <Typography
+            variant="h6"
+            className={classes.title}
+            id="title"
+            component={Link}
+            to={"/"}
+          >
             My Portfolio
           </Typography>
           <div className={classes.mainlinks} id="button-list">

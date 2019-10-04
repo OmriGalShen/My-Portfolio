@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10%;
+  padding: 15%;
   background-image: url("../../assets/images/about_bg.jpeg");
   background-size: cover;
 }
