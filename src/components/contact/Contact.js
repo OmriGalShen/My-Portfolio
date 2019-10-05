@@ -4,18 +4,14 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
-    maxWidth: 360,
     backgroundColor: theme.palette.background.paper
   },
   listText: {
-    fontSize: 25,
+    fontSize: "9em",
     fontFamily: "Oxygen"
   }
 }));
@@ -59,17 +55,17 @@ const InfoSection = () => {
           <h1>Contact Me</h1>
           <hr />
         </div>
+      </Grid>
+      <Grid item xs={12}>
         <div className="info-contact">
           <div className={classes.root}>
-            <List component="nav" aria-label="main mailbox folders">
+            <List aria-label="main mailbox folders">
               <ListItem button>
-                <i className="fab fa-phone-squre" aria-hidden="true" />
-                <p>item 1</p>
+                <i className="fa fa-phone-square" aria-hidden="true" />
+                <p>+(972) 54-3926292</p>
               </ListItem>
               <ListItem button>
-                <ListItemIcon>
-                  <DraftsIcon />
-                </ListItemIcon>
+                <i className="fa fa-phone-square" aria-hidden="true" />
                 <p>item 2</p>
               </ListItem>
             </List>
