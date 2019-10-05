@@ -46,6 +46,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+//given projects list return new array with all the unique types
 const getProjectsType = myList => {
   let typeList = myList.map(project => project.type);
   return Array.from(new Set(typeList));
