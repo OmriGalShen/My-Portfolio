@@ -1,11 +1,48 @@
+h1 {
+  font-family: "Anton", sans-serif;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+
 .contact {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
+  padding: 5em;
   justify-content: center;
-  padding: 15%;
-  background-image: url("../../assets/images/contact_bg.jpg");
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15%; */
+  /* background-image: url("../../assets/images/contact_bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+.grid {
+  text-align: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  border: 2px solid red;
+}
+
+.profile-pic {
+  padding: 1em;
+}
+
+.profile-title {
+}
+
+.profile-des {
+  margin: 0;
+  padding: 1.5em;
+}
+
+.info-title hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
 }
