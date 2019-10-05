@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import MediaCard from "./MediaCard";
 import { projectList } from "./myProjects";
+import uuid4 from "uuid/v4";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,9 +46,50 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const getProjectsType = myList => {
+  let typeList = myList.map(project => project.type);
+  return Array.from(new Set(typeList));
+};
+
 const Projects = props => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+
+  //build the projects tabs
+  const projectTyps = getProjectsType(projectList);
+  let projectTabs = [];
+  for (let i = 0; i < projectTyps.length; i++) {
+    projectTabs.push(<Tab key={uuid4()} label={projectTyps[i]} />);
+  }
+  //
+
+  //build the projects tab panels
+  let projectTabPanels = [];
+  for (let ind = 0; ind < projectTyps.length; ind++) {
+    let currentProjects = projectList.filter(
+      project => project.type === projectTyps[ind]
+    );
+    let currentTabPanel = (
+      <TabPanel
+        key={uuid4()}
+        value={value}
+        index={ind}
+        className={classes.tabPanel}
+      >
+        <div className="cards">
+          {currentProjects.map((cardInfo, index) => {
+            return (
+              <div className="card" key={uuid4()}>
+                <MediaCard cardInfo={cardInfo} />
+              </div>
+            );
+          })}
+        </div>
+      </TabPanel>
+    );
+    projectTabPanels.push(currentTabPanel);
+  }
+  //
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -62,56 +104,10 @@ const Projects = props => {
             onChange={handleChange}
             aria-label="simple tabs example"
           >
-            <Tab label="Item One" />
-            <Tab label="Item Two" />
-            <Tab label="Item Three" />
-            <Tab label="Item 4" />
+            {projectTabs}
           </Tabs>
         </AppBar>
-        <TabPanel value={value} index={0} className={classes.tabPanel}>
-          <div className="cards">
-            {projectList.map((cardInfo, index) => {
-              return (
-                <div className="card" key={index}>
-                  <MediaCard cardInfo={cardInfo} />
-                </div>
-              );
-            })}
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={1} className={classes.tabPanel}>
-          <div className="cards">
-            {projectList.map((cardInfo, index) => {
-              return (
-                <div className="card" key={index}>
-                  <MediaCard cardInfo={cardInfo} />
-                </div>
-              );
-            })}
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={2} className={classes.tabPanel}>
-          <div className="cards">
-            {projectList.map((cardInfo, index) => {
-              return (
-                <div className="card" key={index}>
-                  <MediaCard cardInfo={cardInfo} />
-                </div>
-              );
-            })}
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={3} className={classes.tabPanel}>
-          <div className="cards">
-            {projectList.map((cardInfo, index) => {
-              return (
-                <div className="card" key={index}>
-                  <MediaCard cardInfo={cardInfo} />
-                </div>
-              );
-            })}
-          </div>
-        </TabPanel>
+        {projectTabPanels}
       </div>
     </div>
   );
