@@ -1,5 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import profilePic from "../../assets/images/profile_pic.jpg";
+import "./Contact.css";
 
 const InfoSection = () => {
   return (
@@ -8,11 +10,7 @@ const InfoSection = () => {
         <h1 className="profile-title">Omri Gal Shenhav</h1>
       </Grid>
       <Grid item xs={12}>
-        <img
-          alt="profile"
-          src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-          className="profile-pic"
-        />
+        <img alt="profile" src={profilePic} className="profile-pic" />
       </Grid>
       <Grid item xs={12}>
         <p className="profile-des">
