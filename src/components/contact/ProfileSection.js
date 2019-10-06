@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import profilePic from "../../assets/images/profile_pic.jpg";
+import profilePic from "../../assets/images/profile_pic_2.jpg";
 import "./Contact.css";
 
-const InfoSection = () => {
+const ProfileSection = () => {
   return (
     <Grid container>
       <Grid item xs={12}>
@@ -29,4 +29,4 @@ const InfoSection = () => {
   );
 };
 
-export default InfoSection;
+export default ProfileSection;

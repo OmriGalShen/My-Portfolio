@@ -3,7 +3,7 @@ import "./Contact.css";
 import Grid from "@material-ui/core/Grid";
 // import { makeStyles } from "@material-ui/core/styles";
 import ContactSection from "./ContactSection";
-import InfoSection from "./InfoSection";
+import ProfileSection from "./ProfileSection";
 
 // const useStyles = makeStyles(theme => ({
 //   root: {
@@ -22,7 +22,7 @@ const Contact = props => {
     <div className="contact">
       <Grid container className="grid">
         <Grid item sm={12} md={6}>
-          <InfoSection />
+          <ProfileSection />
         </Grid>
         <Grid item sm={12} md={6}>
           <ContactSection />

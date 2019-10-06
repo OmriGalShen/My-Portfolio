@@ -4,7 +4,6 @@ h1 {
 
 p {
   font-family: "Oxygen", sans-serif;
-  font-weight: bold;
 }
 
 .contact {
@@ -12,14 +11,21 @@ p {
   height: 100%;
   padding: 5%;
   justify-content: center;
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 15%; */
+  text-shadow: 2px 2px 8px black;
   /* background-image: url("../../assets/images/contact_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat; */
+  background: #83a4d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b6fbff,
+    #83a4d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b6fbff,
+    #83a4d4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media (max-width: 600px) {
@@ -29,36 +35,72 @@ p {
 }
 
 .grid {
-  text-align: center;
   justify-content: center;
+  padding-bottom: 10%;
   background: white;
-  opacity: 0.9;
-  color: black;
+  color: white;
+  font-weight: 300;
   border: 2px solid black;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .profile-pic {
   padding: 1em;
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
 .profile-des {
-  margin: 1em;
-  padding: 3em;
+  padding: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+  font-size: 1.5rem;
 }
 
-.info-title hr {
-  border-top: 5px dotted black;
+.contact-title {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+}
+
+.contact-title hr {
+  border-top: 5px solid white;
   width: 50%;
   margin: auto;
 }
 
-.info-contact p {
-  font-size: 25px;
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
 }
 
-.info-contact i {
-  font-size: 25px;
-  padding: 5%;
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3em;
+  font-size: 1.5em;
+  padding-left: 5rem;
+}
+
+@media (max-width: 600px) {
+  .contact-list i {
+    font-size: 50px;
+    padding-right: 3rem;
+  }
+  .list-item {
+    margin: 1.5em;
+    font-size: 1em;
+    padding-left: 1rem;
+  }
 }
