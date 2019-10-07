@@ -36,8 +36,20 @@ const useStyles = makeStyles(theme => ({
   mainlinks: {
     fontSize: "3em"
   },
-  paper: { background: "#23374d", color: "white" }
+  paper: { background: "#23374d", color: "white" },
+  label: {
+    textTransform: "capitalize",
+    fontSize: "1.2em"
+  }
 }));
+
+const linksList = [
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Projects", link: "/projects" },
+  { name: "Resume", link: "/resume" },
+  { name: "Contact", link: "/contact" }
+];
 
 const Navbar = () => {
   //def state of component
@@ -56,14 +68,6 @@ const Navbar = () => {
 
     setOpenDrawer(open);
   };
-
-  const linksList = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Projects", link: "/projects" },
-    { name: "Resume", link: "/resume" },
-    { name: "Contact", link: "/contact" }
-  ];
 
   return (
     <div className="navbar">
@@ -92,6 +96,7 @@ const Navbar = () => {
             {linksList.map((linkItem, index) => {
               return (
                 <Button
+                  classes={{ label: classes.label }}
                   key={index}
                   color="inherit"
                   component={Link}
