@@ -6,14 +6,16 @@ p {
   padding-bottom: 10%;
 }
 
-.right-col {
+.description {
   background: #27221f;
   color: white;
+  padding: 2em;
 }
 
 .profile {
   text-align: left;
-  padding-right: 10%;
+  padding-right: 2em;
+  padding-top: 2em;
 }
 
 .avatar {
@@ -25,6 +27,10 @@ p {
 }
 .profile hr {
   border-top: 3px solid #4b3fb2;
+  border-top: 3px solid black;
   width: 50%;
   margin: 0;
+}
+.description hr {
+  border-top: 3px solid #e22947;
 }

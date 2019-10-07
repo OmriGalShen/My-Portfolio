@@ -2,6 +2,8 @@ import React from "react";
 import "./Resume.css";
 import { Grid } from "@material-ui/core";
 import avatarImage from "./assets/myAvatar.png";
+import Education from "./Education";
+import { educationList } from "./data.js";
 
 const Resume = props => {
   return (
@@ -33,8 +35,20 @@ const Resume = props => {
             <hr />
           </div>
         </Grid>
-        <Grid item md={4} sm={6} className="right-col">
-          Right side
+        <Grid item md={4} sm={6} className="description">
+          <h1>Education</h1>
+          {educationList.map((item, index) => {
+            return (
+              <Education
+                startYear={item.startYear}
+                endYear={item.endYear}
+                schoolName={item.schoolName}
+                schoolDescription={item.description}
+              />
+            );
+          })}
+          <hr />
+          <h1>Experience</h1>
         </Grid>
       </Grid>
     </div>
