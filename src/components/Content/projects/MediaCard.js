@@ -41,7 +41,7 @@ export default function MediaCard({ cardInfo }) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          classes={{ img: classes.img }}
+          image={cardInfo.image}
           title="Project Image"
         />
         <CardContent>
