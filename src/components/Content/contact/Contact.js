@@ -20,7 +20,7 @@ const Contact = props => {
   // const styles = useStyles;
   return (
     <div className="contact">
-      <Grid container className="grid">
+      <Grid container className="grid shadow-5">
         <Grid item sm={12} md={6}>
           <ProfileSection />
         </Grid>

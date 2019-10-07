@@ -1,5 +1,5 @@
 h1 {
-  font-family: "Anton", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -26,6 +26,7 @@ p {
     #b6fbff,
     #83a4d4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d2fafb;
 }
 
 @media (max-width: 600px) {
@@ -36,6 +37,7 @@ p {
 
 .grid {
   justify-content: center;
+  padding-top: 10px;
   padding-bottom: 10%;
   background: white;
   color: white;
@@ -54,6 +56,14 @@ p {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.profile-title {
+  font-size: 3rem;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+}
+
 .profile-pic {
   padding: 1em;
   width: 40%;
@@ -64,11 +74,6 @@ p {
   padding: 1em;
   margin-left: 3em;
   margin-right: 3em;
-  font-size: 1.5rem;
-}
-
-.contact-title {
-  font-family: "Anton", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -95,8 +100,19 @@ p {
 
 @media (max-width: 600px) {
   .contact-list i {
-    font-size: 50px;
-    padding-right: 3rem;
+    font-size: 40px;
+    padding-right: 2rem;
+  }
+  .list-item {
+    margin: 1.5em;
+    font-size: 1.2em;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .contact-list i {
+    font-size: 40px;
+    padding-right: 2rem;
   }
   .list-item {
     margin: 1.5em;
