@@ -1,8 +1,8 @@
 ## What this project about?
 
 This project is my portfolio site.  
-This site includes presonal information, projects, resume and contact info.  
-This project was build using React library.  
+This site includes personal information, projects, resume, and contact info.  
+This project was built using the React library.  
 [Here is a live demo!](https://omri-shenhav.herokuapp.com/)
 
 ## Can I use it for my own porfolio
