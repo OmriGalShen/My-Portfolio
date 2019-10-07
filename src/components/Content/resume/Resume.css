@@ -1,0 +1,30 @@
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.resume {
+  padding-bottom: 10%;
+}
+
+.right-col {
+  background: #27221f;
+  color: white;
+}
+
+.profile {
+  text-align: left;
+  padding-right: 10%;
+}
+
+.avatar {
+  height: 20%;
+}
+
+.name-title {
+  padding-top: 1.5em;
+}
+.profile hr {
+  border-top: 3px solid #4b3fb2;
+  width: 50%;
+  margin: 0;
+}
