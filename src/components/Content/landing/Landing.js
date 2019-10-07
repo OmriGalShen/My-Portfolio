@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import avatar from "../../assets/images/myAvatar2.png";
+import avatar from "./assets/myAvatar2.png";
 import { linkList } from "./myLinks";
 
 const Landing = props => {

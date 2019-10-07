@@ -1,4 +1,4 @@
-import img from "../../assets/images/myAvatar.png";
+import img from "./assets/defaul_project.png";
 
 export const projectList = [
   {

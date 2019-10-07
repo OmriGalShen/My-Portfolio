@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Navbar from "../navbar/Navbar";
-import Footer from "../footer/Footer";
-import About from "../about/About";
-import Contact from "../contact/Contact";
-import Landing from "../landing/Landing";
-import Projects from "../projects/Projects";
-import Resume from "../resume/Resume";
+import Navbar from "../layout/navbar/Navbar";
+import Footer from "../layout/footer/Footer";
+import About from "../content/about/About";
+import Contact from "../content/contact/Contact";
+import Landing from "../content/landing/Landing";
+import Projects from "../content/projects/Projects";
+import Resume from "../content/resume/Resume";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 

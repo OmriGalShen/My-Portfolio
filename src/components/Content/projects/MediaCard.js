@@ -41,8 +41,8 @@ export default function MediaCard({ cardInfo }) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={cardInfo.image}
-          title="Contemplative Reptile"
+          classes={{ img: classes.img }}
+          title="Project Image"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

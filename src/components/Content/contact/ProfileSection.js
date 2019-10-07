@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import profilePic from "../../assets/images/profile_pic_2.jpg";
+import profilePic from "./assets/profile_pic_2.jpg";
 import "./Contact.css";
 
 const ProfileSection = () => {
