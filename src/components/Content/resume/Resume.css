@@ -3,7 +3,7 @@ p {
 }
 
 .resume {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .description {
@@ -15,15 +15,11 @@ p {
 .profile {
   text-align: left;
   padding-right: 2em;
-  padding-top: 2em;
+  /* padding-top: 2em; */
 }
 
 .avatar {
-  height: 20%;
-}
-
-.name-title {
-  padding-top: 1.5em;
+  width: 30%;
 }
 .profile hr {
   border-top: 3px solid #4b3fb2;
