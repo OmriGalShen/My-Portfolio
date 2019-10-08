@@ -2,19 +2,19 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-.resume {
-  padding-bottom: 5%;
-}
-
 .description {
   background: #27221f;
+  /* background: black; */
   color: white;
   padding: 2em;
+  padding-bottom: 3em;
+  height: 100%;
 }
 
 .profile {
   text-align: left;
-  padding-right: 2em;
+  padding: 2em;
+  padding-bottom: 3em;
   /* padding-top: 2em; */
 }
 

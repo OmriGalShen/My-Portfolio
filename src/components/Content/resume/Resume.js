@@ -2,16 +2,16 @@ import React from "react";
 import "./Resume.css";
 import { Grid } from "@material-ui/core";
 import Profile from "./Profile";
-import Description from "./Description";
+import Description from "./description/Description";
 
 const Resume = props => {
   return (
     <div className="resume">
       <Grid container>
-        <Grid item md={6} sm={6} style={{ paddingLeft: 40 }}>
+        <Grid item xs={12} md={3}>
           <Profile />
         </Grid>
-        <Grid item md={6} sm={6} className="description">
+        <Grid item xs={12} md={9}>
           <Description />
         </Grid>
       </Grid>
