@@ -6,54 +6,52 @@ const Certifications = () => {
     <div>
       <h1>Certifications</h1>
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item md={2} xs={6}>
           <p>Open University of Israel</p>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item md={2} xs={6}>
           <p>2018</p>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item md={8} xs={12}>
           <ul>
             <li>
-              <h4>Introduction to Computer Science Using Java</h4>
+              <p>Introduction to Computer Science Using Java</p>
             </li>
             <li>
-              <h4>Data Structures and Introduction to Algorithms</h4>
+              <p>Data Structures and Introduction to Algorithms</p>
             </li>
           </ul>
         </Grid>
       </Grid>
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item md={2} xs={6}>
           <p>Weizmann Institute </p>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item md={2} xs={6}>
           <p>2016 </p>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item md={8} xs={12}>
           <ul>
             <li>
-              <h4>Computer Science, Academia and Industry</h4>
+              <p>Computer Science, Academia and Industry</p>
             </li>
           </ul>
         </Grid>
       </Grid>
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item md={2} xs={6}>
           <p>Udemy </p>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item md={2} xs={6}>
           <p>2019 </p>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item md={8} xs={12}>
           <ul>
             <li>
-              <h4>
-                Complete Python Bootcamp: Go from zero to hero in Python 3
-              </h4>
+              <p>Complete Python Bootcamp: Go from zero to hero in Python 3</p>
             </li>
             <li>
-              <h4>The Complete Web Developer in 2019: Zero to Mastery</h4>
+              <p>The Complete Web Developer in 2019: Zero to Mastery</p>
             </li>
           </ul>
         </Grid>

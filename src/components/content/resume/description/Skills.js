@@ -6,23 +6,23 @@ const Skills = () => {
     <div>
       <h1>Skills</h1>
       <Grid container>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={1}>
+        <Grid item md={2} xs={false}></Grid>
+        <Grid item md={1} xs={6}>
           React,
         </Grid>
-        <Grid item xs={1}>
+        <Grid item md={1} xs={6}>
           Node.js,
         </Grid>
-        <Grid item xs={1}>
+        <Grid item md={1} xs={6}>
           Java,
         </Grid>
-        <Grid item xs={1}>
+        <Grid item md={1} xs={6}>
           Python,
         </Grid>
-        <Grid item xs={1}>
+        <Grid item md={1} xs={6}>
           C#,
         </Grid>
-        <Grid item xs={1}>
+        <Grid item md={1} xs={6}>
           Git/Github
         </Grid>
       </Grid>
