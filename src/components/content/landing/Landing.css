@@ -11,14 +11,9 @@
   background-repeat: no-repeat;
 }
 
-.title {
-  color: red;
-}
-
 .avatar {
   width: 50%;
   height: auto;
-  border-radius: 50%;
 }
 
 hr {
@@ -32,7 +27,7 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5%;
+  padding: 5em;
 }
 
 .social-links {
@@ -46,4 +41,10 @@ hr {
   color: white;
   font-size: 2.5em;
   padding: 12px;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    padding: 1em;
+  }
 }
