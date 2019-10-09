@@ -10,11 +10,13 @@ const Profile = () => {
       <h2 className="black-80">Programmer</h2>
       <hr />
       <p>
-        Recently finished mandatory army service. A highly motivated and curious
-        individual.
-        <br /> Currently about to finish first year courses of Computer Science
+        A highly motivated and curious individual.
+        <br /> Currently taking second year courses of Computer Science
         Bachelor's degree at the Open University.
-        <br /> Interested in a full time / part time junior programming job.
+        <br />
+      </p>
+      <p>
+        Interested in a full time / part time <br /> junior programming job.
       </p>
       <hr />
       <h4>Address</h4>

@@ -7,7 +7,11 @@ import uuid4 from "uuid";
 const displayList = contactList.map(item => {
   return (
     <div key={uuid4()} className="list-item">
-      <i className={item.icon} aria-hidden="true" />
+      <i
+        className={item.icon}
+        aria-hidden="true"
+        style={{ color: item.color }}
+      />
       <p>{item.info}</p>
     </div>
   );
@@ -22,9 +26,11 @@ const ContactSection = () => {
           <hr />
         </div>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item md={1} xs={false}></Grid>
+      <Grid item md={9} xs={12}>
         <div className="contact-list">{displayList}</div>
       </Grid>
+      <Grid item md={3} xs={false}></Grid>
     </Grid>
   );
 };
