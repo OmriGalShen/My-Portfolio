@@ -59,8 +59,8 @@
   }
   .about-panel {
     width: 100%;
-    font-size: 1em;
-    padding-bottom: 60%;
+    font-size: 1.2em;
+    /* padding-bottom: 50%; */
   }
   .about-description {
     width: 90%;
