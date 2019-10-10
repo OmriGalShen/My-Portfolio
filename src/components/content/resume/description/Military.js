@@ -6,10 +6,10 @@ const Military = () => {
     <div>
       <h1>Military service</h1>
       <Grid container>
-        <Grid item xs={4}>
+        <Grid item md={4}>
           <p>2016- 2019</p>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item md={8}>
           <h3>Air Force, The Maintenance Squadron</h3>
           <h3>Sufa-Avionics department (Avionics - "aviation electronics")</h3>
           <p>End of service as a First Sergeant</p>

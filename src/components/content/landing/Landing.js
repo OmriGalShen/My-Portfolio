@@ -7,7 +7,7 @@ const Landing = props => {
   return (
     <div className="landing">
       <div className="banner">
-        <img alt="avatar" src={avatar} className="avatar" />
+        <img alt="avatar" src={avatar} className="avatar-pic" />
         <h1 className="f1 white title">Full Stuck Web Developer</h1>
         <hr />
         <p className="white f3">Java | Python | Javascript | React | NodeJS</p>

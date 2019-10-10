@@ -6,10 +6,10 @@ const Education = () => {
     <div>
       <h1>Education</h1>
       <Grid container>
-        <Grid item xs={4}>
+        <Grid item md={4}>
           <p>2018- Yet to finish</p>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item md={8}>
           <h3>Bachelor's degree in Computer Science</h3>
           <h3>Open University of Israel</h3>
           <p>
@@ -30,10 +30,10 @@ const Education = () => {
         </Grid>
       </Grid>
       <Grid container>
-        <Grid item xs={4}>
+        <Grid item md={4}>
           <p>2011- 2016</p>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item md={8}>
           <h3>High school diploma</h3>
           <h3>"Zafit" High School</h3>
           <ul>

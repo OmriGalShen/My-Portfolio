@@ -26,7 +26,8 @@ const useStyles = makeStyles(theme => ({
   },
   menuItem: {
     fontSize: "1.5em",
-    padding: "20px"
+    padding: "20px",
+    fontFamily: "Anton"
   },
   appbar: {
     background: "#23374d",
