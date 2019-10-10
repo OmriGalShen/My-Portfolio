@@ -22,7 +22,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: 20,
     textDecoration: "none",
-    color: "white"
+    color: "white",
+    fontSize: "1.5em",
+    fontFamily: "lobster"
   },
   menuItem: {
     fontSize: "1.5em",
@@ -40,7 +42,8 @@ const useStyles = makeStyles(theme => ({
   paper: { background: "#23374d", color: "white" },
   label: {
     textTransform: "capitalize",
-    fontSize: "1.2em"
+    fontSize: "1.2em",
+    fontFamily: "Raleway"
   }
 }));
 
