@@ -20,12 +20,11 @@ const ProfileSection = () => {
       </Grid>
       <Grid item xs={12}>
         <p className="profile-des">
-          Hello, my name is Omri Gal Shenhav. I live in Kfar Menahem, a kibbutz
-          in sothern Israel. A highly motivated and curious individual.
-          Currently taking second year courses of Computer Science Bachelor's
-          degree at the Open University. Interested in a full time / part time
-          junior programming job. Please feel free to contact me!
+          Hello, my name is Omri Gal Shenhav. A highly motivated and curious
+          individual. Interested in a full time / part time junior programming
+          job.
         </p>
+        <p className="profile-des"> Please feel free to contact me!</p>
       </Grid>
     </Grid>
   );
