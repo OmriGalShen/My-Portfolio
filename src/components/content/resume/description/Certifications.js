@@ -10,7 +10,7 @@ const Certifications = () => {
           <p>Open University of Israel</p>
         </Grid>
         <Grid item md={2} xs={6}>
-          <p>2018</p>
+          <p className="tr">2018</p>
         </Grid>
         <Grid item md={8} xs={12}>
           <ul>
@@ -28,7 +28,7 @@ const Certifications = () => {
           <p>Weizmann Institute </p>
         </Grid>
         <Grid item md={2} xs={6}>
-          <p>2016 </p>
+          <p className="tr">2016 </p>
         </Grid>
         <Grid item md={8} xs={12}>
           <ul>
@@ -43,7 +43,7 @@ const Certifications = () => {
           <p>Udemy </p>
         </Grid>
         <Grid item md={2} xs={6}>
-          <p>2019 </p>
+          <p className="tr">2019 </p>
         </Grid>
         <Grid item md={8} xs={12}>
           <ul>
