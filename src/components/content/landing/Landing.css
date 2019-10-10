@@ -19,6 +19,11 @@
 
 .title {
   text-decoration: none;
+  font-family: "Anton", sans-serif;
+}
+
+.banner p {
+  font-family: "Raleway", sans-serif;
 }
 
 .avatar-pic {
