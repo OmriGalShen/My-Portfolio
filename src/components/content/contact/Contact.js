@@ -10,9 +10,8 @@ const myStyles = {
     textAlign: "center"
   },
   paper: {
-    background: "black",
+    background: "rgba(0, 0, 0, 0.8)",
     color: "white",
-    opacity: 0.9,
     border: "3px solid black"
   }
 };

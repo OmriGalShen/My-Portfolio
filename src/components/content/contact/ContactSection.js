@@ -21,8 +21,8 @@ const ContactSection = () => {
   return (
     <Grid container className="contact-section">
       <Grid item xs={12}>
-        <div className="contact-title">
-          <h1 style={{ textDecoration: "none" }}>Contact Me</h1>
+        <div>
+          <h1 className="contact-title">Contact Me</h1>
           <hr />
         </div>
       </Grid>
