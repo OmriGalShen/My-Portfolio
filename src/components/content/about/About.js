@@ -4,7 +4,7 @@ import { Paper } from "@material-ui/core";
 
 const myStyles = {
   paper: {
-    background: "rgba(0, 0, 0, 0.8)",
+    background: "rgba(0, 0, 0, 0.7)",
     color: "white",
     border: "3px solid black"
   }
