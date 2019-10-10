@@ -2,7 +2,7 @@ import React from "react";
 import "./Resume.css";
 import { Grid } from "@material-ui/core";
 import Profile from "./Profile";
-import Description from "./description/Description";
+import Description from "./Description";
 
 const Resume = props => {
   return (

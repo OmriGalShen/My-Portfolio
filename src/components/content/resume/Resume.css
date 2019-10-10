@@ -26,7 +26,7 @@ p {
     rgba(65, 35, 251, 1) 55.8%,
     rgba(35, 251, 224, 1) 105.1%
   );
-
+  background: #27221f;
   /* background: black; */
   color: white;
   padding: 2em;
