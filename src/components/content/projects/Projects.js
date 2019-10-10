@@ -36,7 +36,7 @@ TabPanel.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    // backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background.paper
   },
   appBar: {
     // backgroundColor: theme.palette.background.paper

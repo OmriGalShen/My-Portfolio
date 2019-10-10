@@ -40,12 +40,13 @@ export default function MediaCard({ cardInfo }) {
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
+          component="img"
           className={classes.media}
           image={cardInfo.image}
           title="Project Image"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h4" component="h2">
             {cardInfo.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">

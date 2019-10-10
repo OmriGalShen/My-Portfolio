@@ -4,51 +4,52 @@ export const projectList = [
   {
     type: "React",
     image: img,
-    title: "myTitle",
+    title: "My Portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut justo id sem ornare ultrices. Quisque et purus et mi feugiat ultrices. Morbi et ornare libero. Quisque tincidunt bibendum euismod. Aliquam eget odio nulla. Suspendisse ornare pharetra ante ut laoreet. In ac feugiat lorem, non laoreet sem. Ut tristique erat vel lacus luctus, eget luctus odio euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dignissim fringilla nisi eget ultrices. Nunc odio urna, mattis vel felis eu, eleifend imperdiet ipsum. Morbi sit amet ex tempor, lacinia mauris id, accumsan leo.",
-    projectLink: "https://google.com",
-    demoLink: "https://google.com"
+      "This project is my portfolio site. This site includes personal information, projects, resume, and contact info.This project was built using the React library.",
+    projectLink: "https://github.com/OmriGalShen/My-Portfolio",
+    demoLink: "https://omri-shenhav.herokuapp.com/"
   },
   {
     type: "React",
     image: img,
-    title: "myTitle",
+    title: "smart-brain",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut justo id sem ornare ultrices. Quisque et purus et mi feugiat ultrices. Morbi et ornare libero. Quisque tincidunt bibendum euismod. Aliquam eget odio nulla. Suspendisse ornare pharetra ante ut laoreet. In ac feugiat lorem, non laoreet sem. Ut tristique erat vel lacus luctus, eget luctus odio euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dignissim fringilla nisi eget ultrices. Nunc odio urna, mattis vel felis eu, eleifend imperdiet ipsum. Morbi sit amet ex tempor, lacinia mauris id, accumsan leo.",
-    projectLink: "https://google.com",
-    demoLink: "https://google.com"
+      "This is a simple site with login/signup in which the user can enter image URL, and using a free API the site will display square around detected faces in the image. This is the front end portion of the site and created using React.",
+    projectLink: "https://github.com/OmriGalShen/smart-brain",
+    demoLink: "https://smart-brain-omri.herokuapp.com/"
+  },
+  {
+    type: "Node.js",
+    image: img,
+    title: "smart-brain-api",
+    description:
+      "This is a simple site with login/signup in which the user can enter image URL, and using a free API the site will display square around detected faces in the image. This is the back-end portion of the site and created using Node js and express. The database used is postgresSQL.",
+    projectLink: "https://github.com/OmriGalShen/smart-brain-api",
+    demoLink: "https://smart-brain-omri.herokuapp.com/"
   },
   {
     type: "Java",
     image: img,
-    title: "myTitle",
+    title: "SpellChecker",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut justo id sem ornare ultrices. Quisque et purus et mi feugiat ultrices. Morbi et ornare libero. Quisque tincidunt bibendum euismod. Aliquam eget odio nulla. Suspendisse ornare pharetra ante ut laoreet. In ac feugiat lorem, non laoreet sem. Ut tristique erat vel lacus luctus, eget luctus odio euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dignissim fringilla nisi eget ultrices. Nunc odio urna, mattis vel felis eu, eleifend imperdiet ipsum. Morbi sit amet ex tempor, lacinia mauris id, accumsan leo.",
-    projectLink: "https://google.com"
+      "This project was created as part of an assignment for a computer science course. This project is a simple command-line application written in Java. It uses a dictionary text file and an input file and display potential spelled incorrectly words and also display suggestions for a fix.",
+    projectLink: "https://github.com/OmriGalShen/SpellChecker"
   },
   {
     type: "Pyhton",
     image: img,
-    title: "myTitle",
+    title: "BlackJack",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut justo id sem ornare ultrices. Quisque et purus et mi feugiat ultrices. Morbi et ornare libero. Quisque tincidunt bibendum euismod. Aliquam eget odio nulla. Suspendisse ornare pharetra ante ut laoreet. In ac feugiat lorem, non laoreet sem. Ut tristique erat vel lacus luctus, eget luctus odio euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dignissim fringilla nisi eget ultrices. Nunc odio urna, mattis vel felis eu, eleifend imperdiet ipsum. Morbi sit amet ex tempor, lacinia mauris id, accumsan leo.",
-    projectLink: "https://google.com"
-  },
-  {
-    type: "Pyhton",
-    image: img,
-    title: "myTitle",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut justo id sem ornare ultrices. Quisque et purus et mi feugiat ultrices. Morbi et ornare libero. Quisque tincidunt bibendum euismod. Aliquam eget odio nulla. Suspendisse ornare pharetra ante ut laoreet. In ac feugiat lorem, non laoreet sem. Ut tristique erat vel lacus luctus, eget luctus odio euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dignissim fringilla nisi eget ultrices. Nunc odio urna, mattis vel felis eu, eleifend imperdiet ipsum. Morbi sit amet ex tempor, lacinia mauris id, accumsan leo.",
-    projectLink: "https://google.com"
+      "A simple text based black jack game with music. I created this program to learn the basics of Python 3.",
+    projectLink: "https://github.com/OmriGalShen/BlackJack"
   },
   {
     type: "C#",
     image: img,
-    title: "myTitle",
+    title: "High School Project",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut justo id sem ornare ultrices. Quisque et purus et mi feugiat ultrices. Morbi et ornare libero. Quisque tincidunt bibendum euismod. Aliquam eget odio nulla. Suspendisse ornare pharetra ante ut laoreet. In ac feugiat lorem, non laoreet sem. Ut tristique erat vel lacus luctus, eget luctus odio euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dignissim fringilla nisi eget ultrices. Nunc odio urna, mattis vel felis eu, eleifend imperdiet ipsum. Morbi sit amet ex tempor, lacinia mauris id, accumsan leo.",
-    projectLink: "https://google.com"
+      'This work is part of a project called "Computer Science, Academia and Industry" by Weizmann Institute of Science. In this project I made a simple geometric optics simulator (WinForms application) using C# and .NET framework.',
+    projectLink: "https://github.com/OmriGalShen/HighSchoolProject"
   }
 ];
