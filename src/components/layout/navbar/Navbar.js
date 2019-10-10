@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   menuItem: {
     fontSize: "1.5em",
     padding: "20px",
-    fontFamily: "Anton"
+    fontFamily: "lobster"
   },
   appbar: {
     background: "#23374d",
@@ -44,6 +44,13 @@ const useStyles = makeStyles(theme => ({
     textTransform: "capitalize",
     fontSize: "1.2em",
     fontFamily: "Raleway"
+  },
+  mainLinkSelected: {
+    fontWeight: "bold"
+  },
+  manuItemSelected: {
+    background: "white",
+    color: "black"
   }
 }));
 
@@ -103,8 +110,10 @@ const Navbar = () => {
                   classes={{ label: classes.label }}
                   key={index}
                   color="inherit"
-                  component={Link}
+                  component={NavLink}
                   to={linkItem.link}
+                  activeClassName={classes.mainLinkSelected}
+                  exact={true}
                 >
                   {linkItem.name}
                 </Button>
@@ -123,10 +132,12 @@ const Navbar = () => {
             <MenuItem
               key={index}
               color="inherit"
-              component={Link}
+              component={NavLink}
               to={linkItem.link}
               className={classes.menuItem}
               onClick={toggleDrawer(false)}
+              activeClassName={classes.manuItemSelected}
+              exact={true}
             >
               {linkItem.name}
             </MenuItem>
