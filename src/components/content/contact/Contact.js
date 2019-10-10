@@ -12,7 +12,8 @@ const myStyles = {
   paper: {
     background: "black",
     color: "white",
-    opacity: 0.8
+    opacity: 0.9,
+    border: "3px solid black"
   }
 };
 

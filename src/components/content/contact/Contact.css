@@ -1,5 +1,5 @@
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 p {
@@ -14,22 +14,22 @@ p {
   /* text-shadow: 10px 10px 12px black; */
   /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
   background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  background-image: linear-gradient(
+    70.6deg,
+    rgba(172, 30, 255, 1) 0.3%,
+    rgba(65, 35, 251, 1) 55.8%,
+    rgba(35, 251, 224, 1) 105.1%
+  );
+  /* background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 255, 176, 1) 0%,
+    rgba(66, 105, 242, 1) 90%
+  ); */
+
   border: 3px solid black;
   box-shadow: 5px 10px;
   color: white;
-  text-shadow: 10px 10px 12px black;
-}
-
-.contact-section {
-  color: white;
-  text-shadow: 10px 10px 12px black;
-  height: 50%;
-}
-
-@media (max-width: 600px) {
-  .contact {
-    padding: 0;
-  }
+  /* text-shadow: 1px 1px 1px white; */
 }
 
 .grid {
@@ -56,10 +56,12 @@ p {
 }
 .profile-title {
   font-size: 3rem;
+  text-decoration: none;
 }
 
 .contact-title {
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .profile-pic {
@@ -72,10 +74,9 @@ p {
   padding: 1em;
   margin-left: 3em;
   margin-right: 3em;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
 }
 
 .contact-title hr {
@@ -101,25 +102,35 @@ p {
 }
 
 @media (max-width: 600px) {
+  .contact {
+    padding: 1em;
+  }
   .profile-pic {
     width: 50%;
   }
   .profile-des {
     margin-left: 1em;
     margin-right: 1em;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .contact-list i {
-    font-size: 40px;
-    padding-right: 2rem;
+    font-size: 30px;
+    padding-right: 1rem;
   }
   .list-item {
     margin: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding-left: 1rem;
   }
   .grid {
     padding-bottom: 10%;
+  }
+  .profile-title {
+    font-size: 2rem;
+  }
+
+  .contact-title {
+    font-size: 1rem;
   }
 }
 @media (max-width: 350px) {
