@@ -60,11 +60,31 @@ hr {
   padding: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  .landing {
+    padding: 20%;
+  }
   .banner {
-    padding: 1em;
+    padding: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing {
+    padding: 0;
+  }
+  .banner {
+    padding: 2em;
   }
   .avatar-pic {
-    width: 80%;
+    width: 60%;
+  }
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .landing {
+    padding: 23%;
   }
 }
