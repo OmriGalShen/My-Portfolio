@@ -71,11 +71,11 @@ hr {
 
 @media (max-width: 600px) {
   .landing {
-    padding: 0;
-    background: black;
+    padding: 0px;
   }
   .banner {
     padding: 2em;
+    padding-bottom: 3em;
   }
   .avatar-pic {
     width: 60%;
