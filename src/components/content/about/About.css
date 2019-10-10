@@ -17,7 +17,7 @@
 .about-panel {
   font-size: 1.5em;
   padding: 2em;
-  padding-bottom: 8em;
+  /* padding-bottom: 8em; */
   width: 90%;
   /* height: 80%; */
 }
@@ -37,10 +37,11 @@
   font-family: "Raleway", sans-serif;
 }
 .about-description {
-  width: 50%;
+  width: 60%;
   text-align: left;
 
   padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 @media (max-width: 600px) {
@@ -49,10 +50,10 @@
   }
   .about-panel {
     width: 100%;
-    font-size: 1.2em;
-    padding-bottom: 80%;
+    font-size: 1em;
+    padding-bottom: 60%;
   }
   .about-description {
-    width: 80%;
+    width: 90%;
   }
 }
