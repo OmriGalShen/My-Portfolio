@@ -18,13 +18,6 @@ const About = props => {
           <h1 className="about-title">About Me</h1>
           <div className="about-description">
             <p>
-              Hello, my name is Omri Gal Shenhav.
-              <br /> I live in Kfar Menahem, a kibbutz in southern Israel.
-              <br /> I like to go to the gym and going with friends to the
-              cinema or for a pizza. My family has 3 dogs which I help to take
-              out for a walk daily.
-            </p>
-            <p>
               I was first exposed to programming at 8th grade when my friend
               showed me a c++ program he wrote, which seemed very cool to me.
               Together we wrote very simple text games, using tutorials in
