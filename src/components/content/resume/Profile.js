@@ -1,11 +1,11 @@
 import React from "react";
 import "./Resume.css";
-import avatarImage from "./assets/myAvatar.png";
+import avatar from "../../../assets/images/avatar_mini.png";
 
 const Profile = () => {
   return (
     <div className="profile">
-      <img alt="avatar" src={avatarImage} className="avatar" />
+      <img alt="avatar" src={avatar} className="avatar" />
       <h1 className="name-title">Omri Gal Shenhav</h1>
       <h2 className="black-80">Programmer</h2>
       <hr />
