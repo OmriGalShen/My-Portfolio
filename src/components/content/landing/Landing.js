@@ -8,7 +8,7 @@ const Landing = props => {
     <div className="landing">
       <div className="banner">
         <img alt="avatar" src={avatar} className="avatar-pic" />
-        <h1 className="f1 white title">Full Stuck Web Developer</h1>
+        <h1 className="f1 white title">Full Stack Developer</h1>
         <hr />
         <p className="white f3">Java | Python | Javascript | React | NodeJS</p>
         <div className="social-links">
