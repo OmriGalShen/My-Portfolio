@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import profilePic from "./assets/profile_pic_mini.png";
+// import profilePic from "./assets/profile_pic_mini.png";
+import avatar from "../../../assets/images/avatar_mini.png";
 import "./Contact.css";
 
 const myStyles = {
@@ -16,7 +17,7 @@ const ProfileSection = () => {
         <h1 className="profile-title">Omri Gal Shenhav</h1>
       </Grid>
       <Grid item xs={12} style={{ textAlign: "center" }}>
-        <img alt="profile" src={profilePic} className="profile-pic" />
+        <img alt="profile" src={avatar} className="profile-pic" />
       </Grid>
       <Grid item xs={12}>
         <p className="profile-des">
