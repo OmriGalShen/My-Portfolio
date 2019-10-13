@@ -33,6 +33,7 @@
 
 hr {
   width: 50%;
+  border-color: black;
 }
 
 /* .banner {
@@ -53,14 +54,15 @@ hr {
 } */
 
 .social-links {
-  color: white;
+  /* color: white; */
   display: flex;
   justify-content: center;
   width: 50%;
 }
 
 .social-links i {
-  color: white;
+  /* color: white; */
+  color: black;
   font-size: 2.5em;
   padding: 12px;
 }
