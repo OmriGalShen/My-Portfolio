@@ -13,6 +13,18 @@ export const projectList = [
   {
     type: "React",
     image: img,
+    title: "My Weather",
+    description:
+      "This is a simple weather website." +
+      "The app uses accuweather api to display basic weather forecast." +
+      "This project was built using the React library," +
+      "and was build as part of home task by Herolo.",
+    projectLink: "https://github.com/OmriGalShen/my-weather",
+    demoLink: "https://my-weather-omri.netlify.com/"
+  },
+  {
+    type: "React",
+    image: img,
     title: "smart-brain",
     description:
       "This is a simple site with login/signup in which the user can enter image URL, and using a free API the site will display square around detected faces in the image. This is the front end portion of the site and created using React.",
