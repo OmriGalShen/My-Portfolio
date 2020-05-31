@@ -3,7 +3,7 @@
 This project is my portfolio site.  
 This site includes personal information, projects, resume, and contact info.  
 This project was built using the React library.  
-[Here is a live demo!](https://omri-shenhav.herokuapp.com/)
+[Here is a live demo!](https://omri-shenhav.netlify.app/)
 
 ## Can I use it for my portfolio?
 
